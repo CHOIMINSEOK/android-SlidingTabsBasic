@@ -50,7 +50,7 @@ public class MainActivity extends SampleActivityBase {
 
         if (savedInstanceState == null) {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            SlidingTabsBasicFragment fragment = new SlidingTabsBasicFragment();
+            SlidingTabsBasicFragmentKt fragment = new SlidingTabsBasicFragmentKt();
             transaction.replace(R.id.sample_content_fragment, fragment);
             transaction.commit();
         }
